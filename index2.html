@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="index2.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<body>
+    
+        <div class="main">
+            <div class="user_input">
+            <h2>Weather forcast</h2>
+
+            <form action="#">
+                <input type="text"  placeholder="enter a city name" id="city_name">
+                <br>
+                <button type="button" class="btn btn_danger" onclick="getWeatherData()">
+                    search
+                </button>
+            </form>
+        </div>
+        <div class="weather_container">
+            
+            <div class="weather_subsection" style="margin-right: 50px;">
+                <h3 id="location"> </h3>
+                <h6 id="last_updt"></h6>
+                <h2 id="current_temp"></h2>
+                <span id ="icon"></span>   
+                <p id ="current_weather"></p>
+                </div>
+                </div>
+                </div>
+                <script  type="text/javascript" src="index2.js"></script>
+            </body>
+            </html>
